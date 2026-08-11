@@ -2,12 +2,12 @@ import { useReveal } from '../hooks/useReveal'
 import './Solutions.css'
 
 const solutions = [
-  'Printers',
-  'Workstations',
-  'Servers',
-  'Networking',
-  'Projectors',
-  'Projector screens',
+  { name: 'Printers', note: 'Office & campus fleets' },
+  { name: 'Workstations', note: 'Desktops & productivity PCs' },
+  { name: 'Servers', note: 'On-prem & small business' },
+  { name: 'Networking', note: 'Switches, routers, cabling' },
+  { name: 'Projectors', note: 'Classrooms & boardrooms' },
+  { name: 'Projector screens', note: 'Fixed & portable' },
 ]
 
 const brands = ['Dell', 'HP', 'Lenovo', 'Apple']
@@ -16,14 +16,21 @@ export function Solutions() {
   const ref = useReveal<HTMLElement>()
 
   return (
-    <section className="section solutions" id="solutions" ref={ref}>
+    <section
+      className="section solutions"
+      id="solutions"
+      ref={ref}
+      aria-labelledby="solutions-heading"
+    >
       <div className="wrap solutions-grid">
         <div className="solutions-copy reveal">
           <p className="section-label">Hardware &amp; support</p>
-          <h2 className="section-title">The systems your teams depend on.</h2>
+          <h2 className="section-title" id="solutions-heading">
+            IT solutions your teams depend on.
+          </h2>
           <p className="section-lead">
-            Full coverage across new and refurbished IT — from desktop fleets
-            to network backbone and presentation hardware.
+            Full coverage across new and refurbished IT hardware — from desktop
+            fleets to network backbone and presentation equipment in Mysore.
           </p>
 
           <div className="brands reveal reveal-delay-1">
@@ -39,8 +46,11 @@ export function Solutions() {
 
         <ul className="solutions-list reveal reveal-delay-2">
           {solutions.map((item) => (
-            <li key={item}>
-              <span>{item}</span>
+            <li key={item.name}>
+              <span>
+                {item.name}
+                <small className="solution-note">{item.note}</small>
+              </span>
               <svg
                 width="18"
                 height="18"

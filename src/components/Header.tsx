@@ -24,11 +24,11 @@ export function Header() {
   return (
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''} ${open ? 'is-open' : ''}`}>
       <div className="wrap header-inner">
-        <a href="#top" className="brand" onClick={close} aria-label="Infornix Technologies home">
+        <a href="#top" className="brand" onClick={close} aria-label="Infornix Technologies — home">
           <img
             className="brand-mark"
-            src="/infornix_logo.png"
-            alt=""
+            src="/logo-64.png"
+            alt="Infornix Technologies logo"
             width={40}
             height={40}
             decoding="async"
@@ -43,6 +43,7 @@ export function Header() {
           <a href="#services">Services</a>
           <a href="#solutions">Solutions</a>
           <a href="#serve">Who we serve</a>
+          <a href="#faq">FAQs</a>
           <a href="#visit">Visit</a>
         </nav>
 
@@ -72,6 +73,9 @@ export function Header() {
         </a>
         <a href="#serve" onClick={close}>
           Who we serve
+        </a>
+        <a href="#faq" onClick={close}>
+          FAQs
         </a>
         <a href="#visit" onClick={close}>
           Visit

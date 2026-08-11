@@ -1,0 +1,32 @@
+# Infornix Technologies — https://infornix.vercel.app
+User-agent: *
+Allow: /
+
+# Crawl efficiency
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI / answer-engine crawlers (brand discovery)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://infornix.vercel.app/sitemap.xml
+Host: https://infornix.vercel.app

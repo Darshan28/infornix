@@ -97,6 +97,25 @@ ul {
 }
 
 /* Utility */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.65rem 1rem;
+  background: var(--field);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
+
 .wrap {
   width: var(--wrap);
   margin-inline: auto;

@@ -11,6 +11,10 @@
   max-width: 20ch;
 }
 
+.serve-lead {
+  max-width: 42ch;
+}
+
 .serve-list {
   display: grid;
   gap: 2.5rem;

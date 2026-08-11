@@ -8,16 +8,23 @@ export function Visit() {
   const ref = useReveal<HTMLElement>()
 
   return (
-    <section className="section visit" id="visit" ref={ref}>
+    <section
+      className="section visit"
+      id="visit"
+      ref={ref}
+      aria-labelledby="visit-heading"
+    >
       <div className="visit-bg" aria-hidden="true" />
 
       <div className="wrap visit-layout">
         <div className="visit-copy reveal">
           <p className="section-label">Visit &amp; contact</p>
-          <h2 className="section-title">Come see us in Kuvempunagar.</h2>
+          <h2 className="section-title" id="visit-heading">
+            Visit Infornix Technologies in Kuvempunagar, Mysore.
+          </h2>
           <p className="section-lead">
             Walk-ins and appointments welcome. Tell us what you need — we will
-            match new, service, or refurbished options that fit.
+            match new, service, or refurbished IT options that fit.
           </p>
 
           <address className="visit-details">
@@ -32,7 +39,7 @@ export function Visit() {
                 <br />
                 near Bus Depot, Kuvempunagar,
                 <br />
-                Mysore — 570023
+                Mysore — 570023, Karnataka, India
               </p>
             </div>
             <div>
@@ -63,15 +70,16 @@ export function Visit() {
           </div>
         </div>
 
-        <div className="visit-visual reveal reveal-delay-2" aria-hidden="true">
+        <div className="visit-visual reveal reveal-delay-2">
           <img
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80"
-            alt=""
+            alt="Modern office workspace representing Infornix Technologies IT solutions in Mysore"
             width={1400}
             height={933}
             loading="lazy"
+            decoding="async"
           />
-          <div className="visit-visual-overlay">
+          <div className="visit-visual-overlay" aria-hidden="true">
             <p>Mysore</p>
             <span>Kuvempunagar · 570023</span>
           </div>
