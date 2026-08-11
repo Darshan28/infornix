@@ -25,16 +25,14 @@ export function Header() {
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''} ${open ? 'is-open' : ''}`}>
       <div className="wrap header-inner">
         <a href="#top" className="brand" onClick={close} aria-label="Infornix Technologies home">
-          <span className="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="36" height="36" rx="5" fill="currentColor" />
-              <path
-                d="M9 25V11h3.6l3.85 9.3L20.3 11H24v14h-2.9V16.6L17.6 25h-2.95L11.15 16.6V25H9z"
-                fill="#eef2f4"
-              />
-              <path d="M26 25v-3.2h2V25h-2z" fill="#3db8a8" />
-            </svg>
-          </span>
+          <img
+            className="brand-mark"
+            src="/infornix_logo.png"
+            alt=""
+            width={40}
+            height={40}
+            decoding="async"
+          />
           <span className="brand-text">
             <span className="brand-name">Infornix</span>
             <span className="brand-sub">Technologies</span>

@@ -18,5 +18,7 @@ npm run preview
 
 ## Contact
 
+- **CEO & Founder:** Madhukar S
+- **Email:** techinfornix@gmail.com
 - **Office:** 47/D, M-block, opp. HDFC Bank, near Bus Depot, Kuvempunagar, Mysore — 570023
 - **Phone:** +91 97399 27141

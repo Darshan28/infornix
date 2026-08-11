@@ -22,6 +22,10 @@ export function Visit() {
 
           <address className="visit-details">
             <div>
+              <p className="visit-label">CEO &amp; Founder</p>
+              <p className="visit-person">Madhukar S</p>
+            </div>
+            <div>
               <p className="visit-label">Office</p>
               <p>
                 47/D, M-block, opp. HDFC Bank,
@@ -35,11 +39,18 @@ export function Visit() {
               <p className="visit-label">Phone</p>
               <a href="tel:+919739927141">+91 97399 27141</a>
             </div>
+            <div>
+              <p className="visit-label">Email</p>
+              <a href="mailto:techinfornix@gmail.com">techinfornix@gmail.com</a>
+            </div>
           </address>
 
           <div className="visit-actions">
             <a className="btn btn-primary" href="tel:+919739927141">
               Call now
+            </a>
+            <a className="btn btn-outline" href="mailto:techinfornix@gmail.com">
+              Email us
             </a>
             <a
               className="btn btn-outline"
