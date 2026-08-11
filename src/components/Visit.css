@@ -1,0 +1,125 @@
+.visit {
+  position: relative;
+  overflow: hidden;
+  background: #f4f7f8;
+  padding-bottom: var(--space-2xl);
+}
+
+.visit-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 50% 40% at 80% 20%, rgba(31, 138, 124, 0.1), transparent 60%),
+    linear-gradient(180deg, #e8eef1 0%, #f4f7f8 50%, #eef2f4 100%);
+  pointer-events: none;
+}
+
+.visit-layout {
+  position: relative;
+  display: grid;
+  gap: var(--space-xl);
+  align-items: end;
+}
+
+.visit-details {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: var(--space-xl);
+  font-style: normal;
+}
+
+.visit-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.4rem;
+}
+
+.visit-details p:not(.visit-label),
+.visit-details a {
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.visit-details a {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--field);
+  transition: color 0.2s ease;
+}
+
+.visit-details a:hover {
+  color: var(--signal);
+}
+
+.visit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: var(--space-lg);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--field);
+  border: 1px solid var(--line-strong);
+}
+
+.btn-outline:hover {
+  border-color: var(--field);
+  background: rgba(11, 46, 50, 0.04);
+}
+
+.visit-visual {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.visit-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  filter: saturate(0.85) contrast(1.05);
+}
+
+.visit-visual-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 1.25rem 1.35rem;
+  background: linear-gradient(to top, rgba(11, 46, 50, 0.88), transparent);
+  color: #fff;
+}
+
+.visit-visual-overlay p {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.visit-visual-overlay span {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (min-width: 900px) {
+  .visit-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+  }
+
+  .visit-visual {
+    min-height: 420px;
+  }
+
+  .visit-visual img {
+    min-height: 420px;
+  }
+}
